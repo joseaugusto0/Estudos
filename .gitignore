@@ -12,3 +12,7 @@ Advanced Deep Learning/Fashion - CNN/MNIST/raw/train-images-idx3-ubyte
 Advanced Deep Learning/Fashion - CNN/MNIST/raw/train-images-idx3-ubyte.gz
 Advanced Deep Learning/Fashion - CNN/MNIST/raw/train-labels-idx1-ubyte
 Advanced Deep Learning/Fashion - CNN/MNIST/raw/train-labels-idx1-ubyte.gz
+Advanced Deep Learning/Object detection/Black Box/model_Black_Box.pth
+Advanced Deep Learning/Object detection/Image_Different_Bakground/model_Charmander.pth
+Advanced Deep Learning/Object detection/Image_Different_Sizes/model_Charmander.pth
+Advanced Deep Learning/Object detection/Image_Localization/model_Black_Box.pth
