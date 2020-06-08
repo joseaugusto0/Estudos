@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang=“pt-br”>
+	<head>
+		<title>Curso de Javascript</title>
+		<meta charset=“UTF-8”>
+		<script>
+			//Sem parâmetro
+			function escreve(){
+				document.write("Aula Professor<br>");
+			}
+
+			//Com parâmetro
+			function escreve2(texto){
+				document.write(texto);
+			}
+
+			//Função com retorno
+			function escreve3(text){
+				txt = "<br>Seu texto foi: " + text;
+				return txt;
+			}
+
+			escreve();
+			escreve2(prompt("Digite o texto: "));
+			
+			var txtmodificado = escreve3(prompt("Digite o segundo texto: "));
+			escreve2(txtmodificado)
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang=“pt-br”>
+	<head>
+		<title>Curso de Javascript</title>
+        <meta charset=“UTF-8”>
+        <style>
+            #dv1{
+                width: 100px;
+                height: 100px;
+                border: 1px solid #000;
+                background-color: #f00;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+        </style>
+
+        <script>  
+        
+            var px = 0,
+                py = 0;
+
+                function move(){
+                    var obj = document.getElementById("dv1");
+                    var tecla = event.keyCode;
+                    //37=Esquerda / 38=Cima / 39=direita / 40=baixo / 13 = Enter
+
+                    if (tecla==37){
+                        px-=10;
+                        if (px<0){
+                            px=0
+                        }
+                    }else if(tecla==38){
+                        py-=10;
+                        if (py<0){
+                            py=0
+                        }
+                    }else if(tecla==39){
+                        px+=10;
+                        if (px>500){
+                            px=500
+                        }
+                    }else if(tecla==40){
+                        py+=10;
+                        if (py>500){
+                            py=500
+                        }
+                    }else if(tecla==13){
+                        alert("Evento keydown removido");
+                        document.removeEventListener("keydown",move);
+                    }
+                    obj.style.left = px+"px";
+                    obj.style.top = py+"px";
+                    }
+            document.addEventListener("keydown",move);
+        </script>
+                
+	</head>
+	<body>
+        <div id="dv1"></div>
+        
+	</body>
+</html>

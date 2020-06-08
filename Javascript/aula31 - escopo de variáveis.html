@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang=“pt-br”>
+	<head>
+		<title>Curso de Javascript</title>
+		<meta charset=“UTF-8”>
+		<script>
+		
+			var nomeCor="Verde";
+			
+			function escreveCor(){
+                var nomeCor="Azul"
+                //document.write(nomeCor);
+                //Para me referir a variável global
+                document.write(this.nomeCor + "<br>" + nomeCor)
+			}
+
+            escreveCor();
+            //Vai dar erro, pois a variável é local para a função, e não global
+            //documento.write("<br><br>" + nomeCor);
+            
+
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

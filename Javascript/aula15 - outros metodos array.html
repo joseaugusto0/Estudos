@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+    <!--Métodos no array-->
+
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+
+        <script>
+            var mochila=[];
+            mochila.push("Faca");
+            mochila.push("Corda");
+            mochila.push("Pederneira");
+            mochila.push("Chave de fenda");
+            mochila.push("Lanterna");
+
+            //IndexOf - encontra o index a partir do conteúdo
+            var numero = mochila.indexOf("Faca");
+            document.write(numero);
+
+            var num = [5,8,4,9,7,6,3,0,2,1];
+
+            //sort - ordena o conteúdo do vetor
+            //num.sort();
+
+            //reverse - reverte o posicionamento dos conteúdos do array
+            num.reverse();
+            document.write("<br>" + num);
+
+            //join() - retorna todos os elementos do array em uma string separada por vírgula
+            numeros = num.join();
+            document.write("<br>" + numeros);
+
+            //concat - concatena os arrays
+            total = mochila.concat(num);
+            document.write("<br>"+total);
+
+            //lenght - retorna o tamanho do array
+            tamanho = total.length;
+            document.write("<br>"+tamanho)
+
+
+        </script>
+    </head>
+
+    <body>
+    
+    </body>
+
+</html>

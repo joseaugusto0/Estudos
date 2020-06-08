@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-br">
+<!--innerHtml serve para pegar e modificar a tag (ou valor) de um elemento HTML-->
+
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+
+        <script>
+
+            
+        </script>
+    </head>
+
+    <body>
+        <p id="texto">Javascript</p>
+        <input type = "text" id="cxtexto" value="Curso:">
+        <div id="dv">Texto da DIV</div>
+
+        <script>
+            //Pega o valor value do cxtexto
+            //var cxt = document.getElementById("cxtexto").value;
+
+            //Seta um valor value para cxtexto
+            var cxt = document.getElementById("cxtexto").value = "Mudou tudo";
+            alert(cxt)
+
+            //Pegar o valor com a tag <p>
+            var cxt2 = document.getElementById("texto").innerHTML;
+            alert(cxt2)
+
+            //Seta um valor para a tag <p>
+            var cxt3 = document.getElementById("texto").innerHTML = "Mudou denovo";
+            alert(cxt3)
+
+            //Seta um valor para a tag <div>
+                var div = document.getElementById("dv").innerHTML = "Trocou o texto";
+
+
+        </script>
+
+        
+    </body>
+
+</html>

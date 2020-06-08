@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <!--If dentro de if-->
+
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+
+        <script>
+            var nota = prompt("Nota do desgraçado:");
+            var res;
+
+            if (nota>=60){
+                if (nota>=95){
+                    res = "Muito aprovado"
+                }else{
+                    res = "Aprovado";
+                }
+                
+            }
+            else if(nota>=40){
+                if (nota<60){
+                    res = "Recuperação";
+                }
+                
+            }else{
+                res = "Reprovado";
+            }
+            document.write(res);
+
+
+        </script>
+    </head>
+
+    <body>
+    
+    </body>
+
+</html>

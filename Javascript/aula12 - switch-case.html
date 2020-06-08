@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+    <!--Switch case-->
+
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+
+        <script>
+            //final do case coloca um break
+            var pos = prompt("Qual a posição?");
+            var msg;
+            switch(pos){
+                case "1":
+                    msg = "Primeiro lugar";
+                    break
+                case "2":
+                    msg = "Segundo lugar";
+                    break
+                default:
+                    msg = "Perdeu, otário";
+                    break
+            }
+
+            switch(pos){
+                case "1":
+                case "2":
+                    msg = "<br>Subiu ao pódio";
+                    break
+                default:
+                    msg = "<br>Não subiu ao pódio";
+                    break
+            }
+
+            document.write(msg);
+        </script>
+    </head>
+
+    <body>
+    
+    </body>
+
+</html>

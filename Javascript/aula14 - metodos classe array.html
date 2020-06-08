@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+    <!--Métodos no array-->
+
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+
+        <script>
+            var mochila=[];
+            mochila.push("Faca");
+            mochila.push("Corda");
+            mochila.push("Pederneira");
+            mochila.push("Chave de fenda");
+
+            //Push insere no final do array
+            //Unshift insere no início do array
+            mochila.unshift("Pedra")
+
+            //pop remove o último elemento do array
+            //mochila.pop();
+
+            //shift remove o primeiro elemento do array
+            //mochila.shift();
+
+            //splice permite remover uma série de elementos
+            //Primeiro parâmetro: a partir de qual parâmetro você quer remover
+            //Segundo parâmetro: quantos itens quer remover
+            mochila.splice(2,3)
+
+            document.write(mochila[0] + "<br>");
+            document.write(mochila[1] + "<br>");
+            document.write(mochila[2] + "<br>");
+            document.write(mochila[3] + "<br>");
+            document.write(mochila[4] + "<br>");
+        </script>
+    </head>
+
+    <body>
+    
+    </body>
+
+</html>

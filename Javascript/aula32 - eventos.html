@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang=“pt-br”>
+	<head>
+		<title>Curso de Javascript</title>
+        <meta charset=“UTF-8”>
+        <style>
+            #dv1{
+                width: 200px;
+                height: 200px;
+                border: 1px solid #000;
+            }
+        </style>
+		<script>
+			function mudaCor(obj,cor){
+                obj.style.backgroundColor=cor;
+            }
+
+            //Função para jogar o objeto para uma posição aleatória
+            function mudaPos(obj){
+                obj.style.position="absolute";
+                obj.style.left=Math.random*500+"px";
+                obj.style.top=Math.random*500+"px";
+            }
+
+            function ola(){
+                var data = new Date();
+                var hora=data.getHours();
+                var txt;
+                if(hora < 12){
+                    txt = "Bom dia"
+                }else if (hora<18){
+                    txt = "Boa tarde"
+                }else{
+                    txt = "Boa noite"
+                }
+                alert("Olá, " + txt)
+            }
+		</script>
+    </head>
+    <!--Ao abrir a página, o body vai carregar a função ola-->
+	<body onload="ola()">
+        <div id="dv1" onmouseover="mudaCor(this,'#f00')" onmouseout="mudaCor(this,'#fff')"></div>
+        <br/>
+        <!--Códigos simples da pra colocar dentro do html mesmo-->
+        <button onclick="alert('Javascript')" onmouseover="mudaPos(document.getElementById('dv1'))">Clique em mim</button>
+
+
+
+	</body>
+</html>

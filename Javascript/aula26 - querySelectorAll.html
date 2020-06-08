@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-br">
+<!--querySelectorAll retorna tags do CSS, porém retorna uma gama maior de elementos-->
+
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+        <style>
+            .titulo{
+                color:#f00;
+                font-size: 20px;
+                text-decoration: underline;
+            }
+            div{
+                border: 1px solid #000;
+                padding: 10px;
+                display: inline-block;
+            }
+            a{
+                display: block;
+            }
+            .quadro{
+                background-color: #bbb;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 class = "titulo">querySelectorAll</h1>
+        <p> O querySelectorAll é um método que retorna os elemtnos do documento que correspondem a uma classe de CSS ou a uma tag específica.</p>
+        <h2 class="titulo">Curso de Javascript</h2>
+        <p>Tô muito puto relembrando algumas coisas</p>
+        <p class="titulo"> Que que é React?</p>
+        <div>
+            <h3>Javascript aula 26</h3>
+            <p>Esse texto está dentro de uma div</p>
+            <p>Esse também tá dentro da div</p>
+        </div>
+
+        <div class="quadro">
+            <h3>Javascript aula 26</h3>
+            <p>Esse texto está dentro de uma div</p>
+            <p>Esse também tá dentro da div</p>
+        </div>
+        <a href="www.youtube.com" target="_blank">Youtube</a>
+        <a href="www.google.com">Google</a>
+
+        <hr>
+        <script>
+            //Selecionar o elemento que quer retornar
+            //var ps = document.querySelectorAll("p");
+            //ps[0].style.color="#00f";
+            
+            //Imprimir todos os elementos da classe "titulo"
+            var elementos = document.querySelectorAll(".titulo");
+            for(var i=0;i<elementos.length;i++){
+                document.write(elementos[i].innerHTML + "<br>");
+            }
+
+            document.write("<br><br>")
+            //Imprimir só a tag <p> da classe "titulo"
+            var elemento = document.querySelectorAll("p.titulo");
+            for(var i=0;i<elemento.length;i++){
+                document.write(elemento[i].innerHTML + "<br>");
+            }
+
+            document.write("<br><br>")
+            //Imprimir da tag pai <div> a tag filha <p> ou todas as tags ("*")
+            var div = document.querySelectorAll("div > *");
+            for(var i=0;i<div.length;i++){
+                document.write(div[i].innerHTML + "<br>");
+            }
+
+            document.write("<br><br>")
+            //Imprimir da tag pai <div> a tag filha <p> ou todas as tags ("*")
+            var div = document.querySelectorAll("div.quadro > *");
+            for(var i=0;i<div.length;i++){
+                div[i].style.color="#f00";
+            }
+        </script>
+
+
+        
+    </body>
+
+</html>

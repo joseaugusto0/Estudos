@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+<!--Pega tudo que tiver uma tag específica em forma de vetor!!-->
+
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+
+        <script>
+
+            
+        </script>
+    </head>
+
+    <body>
+        <p>Javascript</p>
+        <p>É</p>
+        <p>Um</p>
+        <p>Porre</p>
+        <p>de</p>
+        <p>Chato</p>  
+        <g2>E eu tô tendo que aprender</g2>  
+        <hr/>   
+
+        <script>
+            var tagP = document.getElementsByTagName("<p>");
+            for(var cont = 0;cont<tagP.length;cont++){
+                document.write(tagP[cont].innerHTML+ "<br>");
+            }
+
+            var todasAsTags = document.getElementsByTagName("*");
+            todasAsTags[8].style.color="#f00"
+            //for(var cont = 0;cont<todasAsTags.length;cont++){
+            //    document.write(todasAsTags[cont].innerHTML+ "<br>");
+            //}
+
+
+        </script>
+
+        
+    </body>
+
+</html>
