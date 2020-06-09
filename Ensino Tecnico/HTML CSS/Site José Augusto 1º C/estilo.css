@@ -1,0 +1,180 @@
+#geral img{
+margin-top:0%;
+position: relative;
+top:0%;
+left: 13%;
+
+}
+
+#cabecalho img{
+margin-top:1%;
+position: absolute;
+left: 14%;
+top: 5%;
+margin-bottom:1%;
+}
+
+
+#menu {
+background:#CCC;
+
+position:relative;
+top:10%;
+}
+
+#logo img {
+position:absolute;
+top:80%;
+width: 140px;
+opacity:0.7;
+}
+
+#menu ul{
+font-family: "Lucida Fax";
+
+width: 158px;
+height: 700px;
+background-image: linear-gradient(to top, white, blue,white);padding:0px;
+position:fixed;
+top:1%;
+left:0%;
+margin-top:0%;
+list-style:none;
+}
+
+#menu ul li{
+font-size: 120%;
+display:list-item;
+margin-bottom: 30px;
+display:block;
+line-height:36px;
+}
+
+
+#menu ul li a{
+color: #333;
+text-decoration:none;
+display: block;
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-o-transition: all 0.5s;
+text-indent:2px;
+
+}
+
+
+#menu ul li a:hover{
+color: #FFF; 
+background: #333;
+text-indent:10px;
+}
+
+
+#meio{
+margin-left: 5px;
+position:absolute;
+top:29%;
+left:13%;
+width: 86%;
+height: 70%;
+background-image: linear-gradient(60deg, white, blue);
+
+
+}
+
+h1{margin: 0 0 .5em;}
+
+#meio h1 {
+text-align: center;
+font-family: Mongolian Baiti;
+border-style: double;
+}
+
+#meio p{
+text-align: center;
+color: white;
+}
+
+#meio h2 {
+text-align: center;
+font-family: Mongolian Baiti;
+border-style: double;
+}
+
+#conteudo img{
+position: absolute;
+left: 38%;
+top: 45%;
+}
+
+
+#meio h3 {
+text-align: center;
+font-family: Mongolian Baiti;
+border-style: double;
+position: absolute;
+bottom: 0%;
+left: 20%;
+}
+
+
+#local {
+position: absolute;
+top:35%;
+left: 33%;
+}
+
+#localfundo {
+background-image: linear-gradient(60deg, white, blue);
+height: 71%;
+margin-left: 155px;
+}
+
+#local p{
+margin-bottom: 0;
+text-align:center;
+color:white;
+font-size: 100%;
+}
+
+#sobre {
+background-image: linear-gradient(60deg, white, blue);
+height: 69%;
+width: 86%;
+margin-left: 155px;
+position:absolute;
+top:30%;
+}
+
+#sobre p{
+color:black;
+text-align:center;
+}
+
+#sobre h1{
+text-align:center;
+font-family: Lucida Fax;
+color: #333; 
+}
+
+#rodape {
+position:absolute;
+top: 23%;
+left:76%;
+background-image: white;
+}
+
+#relogio {
+border-style: double;
+position: absolute;
+top:19%;
+left:80%;
+}
+
+#musica {
+position: absolute;
+top:22%;
+left:75%;
+width:300%;
+}

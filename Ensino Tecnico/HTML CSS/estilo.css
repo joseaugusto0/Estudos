@@ -1,0 +1,100 @@
+body{
+margin:12;
+padding:9;
+font: 85% arial,hevetica,sans-serif;
+text-align:center;
+color:#333;
+background-color:#D3D3D3;
+}
+
+a:link{color:#B52CO7}
+a:visited{color:#7D8206}
+a:focus{color:#FFF}
+a:hover{color:#7D8206}
+a:active{color:red}
+
+h1,h2,h3{margin: 0 0 .5em;}
+
+#geral{
+margin: 1em auto;
+width:1050px;
+text-align:left;
+background:#FFF;
+border:1px solid #676767;
+}
+
+#cabecalho{
+heigth:45px;
+width:100;
+position:relative;
+border-bottom:1px solid #FFF;
+}
+
+#cabecalho h1{
+position: absolute;
+}
+
+#irmenu{
+postion:absolute;
+right:0;
+bottom:5px;
+width:645px;
+text-align:right;
+}
+
+#irmenu a{
+color:#555;
+text-decoration:none;
+}
+
+#menunavegacao{
+background:#9FA41D;
+color:#272900;
+paddign:2px 0;
+margin-bottom:21px;
+}
+
+#menunavegacao ul{
+margin:0 0 0 20px;
+padding:0;
+list-style-type:none;
+border-left:1px solid #C4C769;
+}
+
+#menunavegacao li{
+display:inline;
+padding:0 10px;
+border-right:1px solid #C4C769;
+}
+
+#menunavegacao li a{
+text-decoration:none;
+color:#272900;
+}
+
+#menunavegacao li a:hover{
+text-decoration:none;
+color:#FFF;
+background-color:#272900;
+}
+
+h2 {
+color:#B52CO7;
+font: 140% georgia,Times,"times new roman",serif;
+}
+
+h2 2 {text-decoration:none}
+
+h3{
+color:#7D8206;
+font:110% georgia,times,"times new roman",serif;
+}
+
+#conteudo p{
+line-height:165%;
+}
+
+#rodape {
+clear:both;
+background:#FF9;
+}
