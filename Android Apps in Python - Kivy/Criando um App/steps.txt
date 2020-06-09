@@ -1,0 +1,5 @@
+Cmd na pasta do main kivy
+Digita: buildozer init
+
+Abre o arquivo buildozer.spec
+descomentar linha "android.logcat_filters = *:S python:D" para debug
